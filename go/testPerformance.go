@@ -9,10 +9,10 @@ func main() {
 	start := time.Now()
 
 	// 创建一个非常大的切片
-	slice := make([]int, 1000000)
+	slice := make([]int, 0, 10000)
 
 	// 对切片进行连续的追加操作
-	for i := 0; i < 1000000; i++ {
+	for i := 0; i < 10000; i++ {
 		slice = append(slice, i)
 	}
 
